@@ -2,7 +2,6 @@ import React from 'react';
 import {observer} from 'mobx-react';
 import UserStores from './stores/UserStore';
 import LoginForm from './LoginForm';
-import InputField from './InputField';
 import SubmitButton from './SubmitButton'
 
 
@@ -19,7 +18,7 @@ class App extends React.Component{
         method: 'post',
         headers: {
           'Accept': 'application/json',
-          'Content-type': 'application/json'
+          'Content-Type': 'application/json'
       
               }
 
@@ -106,7 +105,9 @@ class App extends React.Component{
   return (
     <div className="app">
 
+
         <div className="container" >
+          
           <LoginForm/>
 
         </div>
